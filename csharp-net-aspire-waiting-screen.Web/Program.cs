@@ -19,8 +19,7 @@ builder.Services.AddHttpClient<WeatherApiClient>(client =>
     client.BaseAddress = new("https+http://apiservice");
 });
 
-// Configure the application to listen on all network interfaces
-builder.WebHost.UseUrls("http://0.0.0.0:5059");
+builder.WebHost.UseUrls("http://localhost:5059/");
 
 var app = builder.Build();
 
